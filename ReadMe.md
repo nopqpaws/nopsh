@@ -1,4 +1,4 @@
-# Nopsh  
+# nopsh  
 A minimal POSIX‑style shell written in pure C.
 
 I built nopsh as a way to learn how shells actually work under the hood. It's small and intentionally easy to read. If you're curious about fork/exec, I/O redirection, or just want to poke around a simple REPL implementation, this could be a useful reference.
@@ -52,11 +52,11 @@ hello world
 
 ## Architecture
 
-- **input/** - reads a line from stdin  
-- **parser/** - tokenizes input and picks out any `<`/`>`redirection  
-- **builtins/** - handles the built‑in commands  
-- **executor/** - forks, execs, and wires up redirection
-- **net/** - a tiny HTTP client used just for `getrun`
+- **input.c** - reads a line from stdin  
+- **parser.c** - tokenizes input and picks out any `<`/`>`redirection  
+- **builtins.c** - handles the built‑in commands  
+- **executor.c** - forks, execs, and wires up redirection
+- **net.c** - a tiny HTTP client used just for `getrun`
 
 ---
 
