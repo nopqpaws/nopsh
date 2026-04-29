@@ -12,7 +12,7 @@
 /*
     ----- External command execution -----
 
-    Runs anything that isn't a built-in. The flow is a standard5 fork/exec:
+    Runs anything that isn't a built-in. The flow is a standard fork/exec:
 
         1) fork() creates a child process
         2) child sets up any I/O redirection
